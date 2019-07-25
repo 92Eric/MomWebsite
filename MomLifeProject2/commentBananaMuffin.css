@@ -1,0 +1,59 @@
+       .comment
+        {
+            width: 200px;
+            height: 200px;
+            resize: none;
+        }
+        .comment-box
+        {
+            width: 200px;
+            background-color: white;
+            border-color: black;
+            margin-top:4px;
+            margin-bottom: 4px;
+            position: relative;
+        }
+        .comment-box p
+        {
+            font-family: arial;
+            font-size: 14px;
+            line-height:16px;
+            color: #282828;
+            font-weight: 100px;
+        }
+        .editForm{
+            font-weight: bold;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .editForm button{
+            width: 40px;
+            height: 10px;
+            color: #282828;
+            background-color: white;
+            opacity: 0.7;
+        }
+         .editForm button:hover{
+             opacity: 1;
+        }
+         .deleteForm{
+            font-weight: bold;
+            position: absolute;
+            top: 0px;
+            right: 80px;
+    
+        }
+        .deleteForm button{
+            width: 40px;
+            height: 10px;
+            color: #282828;
+            background-color: white;
+            opacity: 0.7;
+        }
+         .deleteForm button:hover{
+             opacity: 1;
+        }
+        .commentmessage{
+            float:right;
+        }

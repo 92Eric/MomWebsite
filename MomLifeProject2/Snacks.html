@@ -1,0 +1,209 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name = "description" content = "Eric's Education">
+    <title> Snacks </title> <!--/*displays the title of a web page-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <style>  
+      
+        body 
+        {
+            background: #F0F8EA;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 95%;
+            max-width= 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: #00FFFF;
+            color: #EBEBD3;
+            padding: 1em 0;
+            position:relative;
+        }
+        
+        header::after {
+            content: '';
+            clear:both;
+            display:block;
+        }
+
+        .logo {
+            font-size: 1rem;
+            margin:0;
+            color:black;
+            text-transform:uppercase;
+            font-weight: 700;
+            float:left;
+        }
+        .logo span {
+            font-weight: 400;
+        }
+
+        .site-nav
+        {
+           
+            position:absolute;
+            top: 100%;
+            right:0%;
+            background: #464655;
+            height: 0px;
+            overflow:hidden;
+        }
+        .site-nav-open{
+            height: auto;
+           
+        }
+        .site-nav ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .site-nav li{
+           border-bottom: 1px solid #575766; 
+        }
+        
+        .site-nav li:last-child {
+            border-bottom: none;
+        }
+        .site-nav a {
+            color: #EBEBD3;
+            display: block;
+            padding: 2em 6em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        .site-nav a:hover,
+        .site-nav a:focus{
+            background: #E4B363;
+        }
+        
+        
+        .menu-toggle
+        {
+            background:black;
+            padding: 1em;
+            position: absolute;
+            top: .75em;
+            right: .75em;
+            cursor: pointer;
+        }
+        
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after
+        {
+            content:'';
+            display: block;
+            background: #EBEBD3;
+            height: 3px;
+            width: 1.75em;
+            border-radius: 3px;
+            transition: all ease-in-out 1000ms;
+        }
+        
+        .hamburger::before {
+            transform: translateY(-6px);
+        }
+        
+        .hamburger::after {
+           transform: translateY(3px);
+        }
+        
+        .open .hamburger
+        {
+            transform:rotate(45deg);
+        }
+        
+        .open .hamburger::before{
+            opacity: 0;
+        }
+        .open .hamburger::after {
+            transform: translateY(-3px) rotate(-90deg);
+        }
+        
+        @media(min-width:700px) {
+            
+            .menu-toggle {
+                display:none;
+            }
+            
+            .site-nav{
+                height:auto;
+                position:relative;
+                background: transparent;  
+                float:right;
+            }
+            
+            .site-nav li
+            {
+                display:inline-block;
+                border:none;
+            }
+            .site-nav a{
+                padding:0;
+                margin-left: 3em;
+                color:black;
+            }
+            .site-nav a:hover,
+            .site-nav a:focus{
+                background: transparent;
+            }
+        }
+        
+  
+    </style>
+</head>
+<body>
+    
+<header>
+<div class = "container">
+    <h1 class="logo">Susan's Kitchen </h1>
+    
+    
+   
+    <nav class = "site-nav">
+        <ul id="menu" class="menu">
+            <li id="menu-item-1" class="menu-Items"><a href = "SusansHomePage2.html" target="_blank">Home</a></li>       
+            <li id="menu-item-2" class="menu-Items"><a href = "">Search Recipes </a></li>    
+            <li id="menu-item-3" class="menu-Items"><a href = "MainDishes.html" target="_blank">Main Dishes</a></li>      
+            <li id="menu-item-4" class="menu-Items"><a href = "SoupsAndStews.html" target ="_blank">Soups and Stews</a></li>      
+            <li id="menu-item-5" class="menu-Items"><a href= "BreadAndRolls.html" target ="_blank">Breads and Rolls</a></li>
+            <li id="menu-item-7" class="menu-Items"><a href= "Desserts.html" target ="_blank">Desserts</a></li>       
+        </ul>
+    </nav>
+    
+    <div class= "menu-toggle">
+        <div class = "hamburger"></div>
+    </div>
+       
+   
+ </div>
+    
+
+ </header>
+
+
+    <script>
+    //opens and closes menu
+    $('.menu-toggle').click(function() {
+        //toggleClass adds and reverses the added height
+        $('.site-nav').toggleClass('site-nav-open', 1000);
+        $(this).toggleClass('open');
+    
+    
+    
+    })
+    </script>  
+ 
+    </body>
+
+ 
+    </html>

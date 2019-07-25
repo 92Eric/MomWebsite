@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name = "description" content = "Eric's Education">
+    <title> Susan's Home Page2 </title> <!--/*displays the title of a web page-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <style>  
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body 
+        {
+            background: #F0F8EA;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 95%;
+            max-width= 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: #00FFFF;
+            color: #EBEBD3;
+            padding: 1em 0;
+            margin-bottom: 30px;
+            position:relative;
+        }
+        
+        header::after {
+            content: '';
+            clear:both;
+            display:block;
+        }
+
+        .logo {
+            font-size: 1rem;
+            margin:0;
+            color:black;
+            text-transform:uppercase;
+            font-weight: 700;
+            float:left;
+        }
+        .logo span {
+            font-weight: 400;
+        }
+
+        .site-nav
+        {
+           
+            position:absolute;
+            top: 100%;
+            right:0%;
+            background: #464655;
+            height: 0px;
+            overflow:hidden;
+        }
+        .site-nav-open{
+            height: auto;
+           
+        }
+        .site-nav ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .site-nav li{
+           border-bottom: 1px solid #575766; 
+        }
+        
+        .site-nav li:last-child {
+            border-bottom: none;
+        }
+        .site-nav a {
+            color: #EBEBD3;
+            display: block;
+            padding: 2em 6em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        .site-nav a:hover,
+        .site-nav a:focus{
+            background: #E4B363;
+        }
+        
+        
+        .menu-toggle
+        {
+            background:black;
+            padding: 1em;
+            position: absolute;
+            top: .75em;
+            right: .75em;
+            cursor: pointer;
+        }
+        
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after
+        {
+            content:'';
+            display: block;
+            background: #EBEBD3;
+            height: 3px;
+            width: 1.75em;
+            border-radius: 3px;
+            transition: all ease-in-out 1000ms;
+        }
+        
+        .hamburger::before {
+            transform: translateY(-6px);
+        }
+        
+        .hamburger::after {
+           transform: translateY(3px);
+        }
+        
+        .open .hamburger
+        {
+            transform:rotate(45deg);
+        }
+        
+        .open .hamburger::before{
+            opacity: 0;
+        }
+        .open .hamburger::after {
+            transform: translateY(-3px) rotate(-90deg);
+        }
+        
+        .imageSlider
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 88vh;
+        }
+        .slider-wrapper
+        {
+            width:  600px;
+            height: 300px;
+            overflow: hidden;
+ 
+        }
+        .inner-wrapper{
+            width: 500%;
+            height = 100%
+            position: relative;
+            left: -100%;
+            
+        }
+        .slide{
+            width: calc(100%/5);
+            height: 100%;
+            float: left;
+            display:block;
+            justify-content:center;
+            align-items: center;
+ 
+        }
+        .button
+        {
+            width: 30px;
+            height:30px;
+            border-top: 2px solid black;
+            position:absolute;
+            cursor:pointer;
+            
+        }
+        .prev{
+            border-left: 2px solid black;
+            left: 10%;
+            transform: rotate(-45deg);
+        }
+        
+        .next
+        {
+            border-right: 2px solid black;
+            right: 10%;
+            transform: rotate(45deg);
+        }
+        .About
+        {
+            text-align:center;
+        }
+        .AboutMePara{
+            text-align:center;
+            margin-bottom: 30px;
+        }
+      
+
+        
+        @media(min-width:700px) {
+            
+            .menu-toggle {
+                display:none;
+            }
+            
+            .site-nav{
+                height:auto;
+                position:relative;
+                background: transparent;  
+                float:right;
+            }
+            
+            .site-nav li
+            {
+                display:inline-block;
+                border:none;
+            }
+            .site-nav a{
+                padding:0;
+                margin-left: 3em;
+                color:black;
+            }
+            .site-nav a:hover,
+            .site-nav a:focus{
+                background: transparent;
+            }
+            
+        }
+        
+  
+    </style>
+</head>
+<body>
+ 
+<!---site navigation start-->
+<header>
+<div class = "container">
+    <h1 class="logo">Susan's Kitchen </h1>
+    
+    
+
+    <nav class = "site-nav">
+        <ul id="menu" class="menu">
+            <li id="menu-item-1" class="menu-Items"><a href = "Susans Home Page2.html">Home</a></li>       
+            <li id="menu-item-2" class="menu-Items"><a href = "">Search Recipes </a></li>    
+            <li id="menu-item-3" class="menu-Items"><a href = "MainDishes.php" target = "_blank">Main Dishes</a></li>      
+            <li id="menu-item-4" class="menu-Items"><a href = "SoupsAndStews.html" target ="_blank">Soups and Stews</a></li>      
+            <li id="menu-item-5" class="menu-Items"><a href= "BreadAndRolls.html" target ="_blank">Breads and Rolls</a></li>
+            <li id="menu-item-6" class="menu-Items"><a href= "Snacks.html" target ="_blank">Snacks</a></li>
+            <li id="menu-item-7" class="menu-Items"><a href= "Desserts.html" target="_blank" >Desserts</a></li>       
+        </ul>
+    </nav>
+    
+    <div class= "menu-toggle">
+        <div class = "hamburger"></div>
+    </div>
+       
+ </div>
+<!---site navigation before-->   
+
+ </header>
+    
+    
+    <!----Below is start of image slider --->
+  <center> <div class ="imageSlider">
+        
+        <div class = "slider-wrapper">
+            <div class = "inner-wrapper">
+                
+                <div class = "slide"><img src ="image1.jpg"  id = "image" width = 200 height = 200  alt = "image1"/> <p id="text"> You</p> </div>
+                <div class = "slide"><img src="image2.JPG"  width = 200 height = 200  alt = "image2"><p id="text"> should</p></div>
+                <div class = "slide"><img src="image3.JPG"   width = 200 height = 200 alt = "image3"><p id="text"> get</p></div>
+                <div class = "slide"><img src="image4.JPG"  width = 200 height = 200  alt = "image4"><p id="text"> a</p></div>
+                <div class = "slide"><img src="image5.jpg"   width = 200 height = 200  alt = "image5"><p id="text"> kidney</p></div> 
+            </div>
+        
+        <div class ="button prev"></div>
+        <div class = "button next"></div>
+            
+            
+        </div>
+    
+    
+    
+    
+    
+    </div> </center>   
+    <!---Above is end of image slider----->
+    
+    <h2 class= "About"> About Me </h2>
+    <P class = "AboutMePara"> Hi,........</P>
+    <center><img src = "" alt = "Mom home image" class = "HomeImage"></center> 
+      <center>
+    <video id = SusanIntroduction src = ""> Your browser does not support the video.</video>
+    </center>
+    <script src="imageSlider.js"></script>
+    <script>
+    //opens and closes menu
+    $('.menu-toggle').click(function() {
+        //toggleClass adds and reverses the added height
+        $('.site-nav').toggleClass('site-nav-open', 1000);
+        $(this).toggleClass('open');
+    
+    
+    
+    })
+    </script>  
+ 
+    </body>
+
+ 
+    </html>

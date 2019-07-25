@@ -1,0 +1,119 @@
+ body 
+        {
+            background: #F0F8EA;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 95%;
+            max-width= 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: #00FFFF;
+            color: #EBEBD3;
+            padding: 1em 0;
+            position:relative;
+        }
+        
+        header::after {
+            content: '';
+            clear:both;
+            display:block;
+        }
+
+        .logo {
+            font-size: 1rem;
+            margin:0;
+            color:black;
+            text-transform:uppercase;
+            font-weight: 700;
+            float:left;
+        }
+        .logo span {
+            font-weight: 400;
+        }
+
+        .site-nav
+        {
+           
+            position:absolute;
+            top: 100%;
+            right:0%;
+            background: #464655;
+            height: 0px;
+            overflow:hidden;
+        }
+      .site-nav-open{
+            height: auto;
+           
+        }
+        .site-nav ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .site-nav li{
+           border-bottom: 1px solid #575766; 
+        }
+        
+        .site-nav li:last-child {
+            border-bottom: none;
+        }
+        .site-nav a {
+            color: #EBEBD3;
+            display: block;
+            padding: 2em 6em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        .site-nav a:hover,
+        .site-nav a:focus{
+            background: #E4B363;
+        }
+        
+        
+        .menu-toggle
+        {
+            background:black;
+            padding: 1em;
+            position: absolute;
+            top: .75em;
+            right: .75em;
+            cursor: pointer;
+        }
+        
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after
+        {
+            content:'';
+            display: block;
+            background: #EBEBD3;
+            height: 3px;
+            width: 1.75em;
+            border-radius: 3px;
+            transition: all ease-in-out 1000ms;
+        }
+        
+        .hamburger::before {
+            transform: translateY(-6px);
+        }
+        
+        .hamburger::after {
+           transform: translateY(3px);
+        }
+        
+        .open .hamburger
+        {
+            transform:rotate(45deg);
+        }
+        
+        .open .hamburger::before{
+            opacity: 0;
+        }
+        .open .hamburger::after {
+            transform: translateY(-3px) rotate(-90deg);
+        }
+        
+        }

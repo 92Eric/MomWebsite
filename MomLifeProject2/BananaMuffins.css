@@ -1,0 +1,205 @@
+        .MuffinsBanana
+        {
+            font-size: 2em;
+            margin bottom: 20px;
+        }
+        .nutrients{
+            border-style: groove;
+            border-bottom-color: black;
+            border-top-color: black;
+            border-left-color: black;
+            border-right-color:black;
+            background-color:white;
+            height: 750px;
+            width: 400px;
+            margin-top: 50px;
+            margin-right: 50px;
+
+            
+        }
+        .NutritonFacts{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .Calories, .Protein, .Sodium, .Potassum, .Carbohydrates, .Fat
+        , .Cholesterol, .Phosporous, .Potassium, .Calcium
+        {
+            background-color:aqua;
+            width: 100px;   
+        }
+        .CaloriesDiv
+        {
+            float: left;
+            margin-left: 10px;
+            background-color:black;
+         
+        }     
+        .CaloriesCount
+        {
+             float: right;
+             margin-right: 10px; 
+             background-color:black;
+        }
+        .SodiumDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .SodiumCount
+        {
+            background-color:black;
+            float: right;
+            margin-right: 10px;
+        }
+        .ProteinDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .ProteinCount
+        {
+            background-color:black;
+            float: right;
+            margin-right: 10px;
+        }
+        .CarbohydratesDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .CarbohydratesCount
+        {
+           background-color:black;
+           float: right;
+           margin-right: 10px; 
+        }
+        .FatDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .FatCount
+        {
+           background-color:black;
+           float: right;
+           margin-right: 10px; 
+        }
+        .CholesterolDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .CholesterolCount
+        {
+           background-color:black;
+           float: right;
+           margin-right: 10px; 
+        }
+        .PhosporousDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .PhosporousCount{
+            
+            float: right;
+            background-color:black;
+            margin-right: 10px;
+        }
+        .PotassiumDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .PotassiumCount
+        {
+            float: right;
+            background-color:black;
+            margin-right: 10px; 
+        }
+        .CalciumDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px;
+        }
+        .CalciumCount
+        {
+            float: right;
+            background-color:black;
+            margin-right: 10px; 
+        }
+        .FiberDiv
+        {
+            float: left;
+            background-color:black;
+            margin-left: 10px; 
+        }
+        .FiberCount
+        {
+            float: right;
+            background-color:black;
+            margin-right: 10px; 
+        }
+         .FiberAmount {
+            background-color:aqua;
+            width: 200px;
+        }
+        .Fiber {
+            background-color:aqua;
+            width: 100px;
+        }
+        .Display
+        {
+            display: flex;
+        }
+        
+        
+            
+        .Line{
+            color: black;
+            
+        }.hideLine
+        {
+            visibility: hidden;
+        }
+        .indgrientsList
+        {
+            border-style: groove;
+            border-bottom-color: black;
+            border-top-color: black;
+            border-left-color: black;
+            border-right-color:black;
+            background-color:white;
+            height: 300px;
+            width: 400px;
+            margin-top: 50px;
+        }
+        .Indgriendts
+        {
+            font-size: 2em;
+            font-weight: bold;
+            
+        }
+        .MuffinsList
+        {
+                float: left;
+        
+        }
+        .MuffinsList2
+        {
+                float: left;
+        
+        }
+        .MuffinsList3
+        {
+                float: left;
+        
+        }
